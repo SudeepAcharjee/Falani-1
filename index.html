@@ -1,9 +1,8 @@
 <!DOCTYPE HTML>
 <!--
-	Dopetrope by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+	Falani by 
+	@Rishikesh | @Sudeep
+    For personal and commercial use under the CCA 3.0 license -->
 <html>
 	<head>
 		<title>Falani</title>
@@ -11,6 +10,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+		<!-- Star Raiting -->
+		<link rel="stylesheet" href="./assets/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	 
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -26,7 +29,7 @@
 							<ul>
 								<li class="current"><a href="index.html">Home</a></li>
 								<li>
-									<!-- <a href="#">Dropdown</a>
+									<a href="#">Dropdown</a>
 									<ul>
 										<li><a href="#">Lorem ipsum dolor</a></li>
 										<li><a href="#">Magna phasellus</a></li>
@@ -42,7 +45,7 @@
 											</ul>
 										</li>
 										<li><a href="#">Veroeros feugiat</a></li>
-									</ul> -->
+									</ul>
 								</li>
 								<li><a href="left-sidebar.html">Left Sidebar</a></li>
 								<li><a href="right-sidebar.html">Right Sidebar</a></li>
@@ -318,7 +321,54 @@
 							</div>
 						</div>
 					</div>
+					<div class="s">
+						<div class="container1">
+							<div class="post">
+							  <div class="text">Thanks for rating us!</div>
+							  <div class="edit">EDIT</div>
+							</div>
+							<div class="star-widget">
+							  <input type="radio" name="rate" id="rate-5">
+							  <label for="rate-5" class="fas fa-star"></label>
+							  <input type="radio" name="rate" id="rate-4">
+							  <label for="rate-4" class="fas fa-star"></label>
+							  <input type="radio" name="rate" id="rate-3">
+							  <label for="rate-3" class="fas fa-star"></label>
+							  <input type="radio" name="rate" id="rate-2">
+							  <label for="rate-2" class="fas fa-star"></label>
+							  <input type="radio" name="rate" id="rate-1">
+							  <label for="rate-1" class="fas fa-star"></label>
+							  <form action="#">
+								<header></header>
+								<div class="textarea">
+								  <textarea cols="30" placeholder="Describe your experience.."></textarea>
+								</div>
+								<div class="btn">
+								  <button type="submit">Post</button>
+								</div>
+							  </form>
+							</div>
+						  </div>
+						  </div>
+					
 				</section>
+				
+				  <script>
+					const btn = document.querySelector("button");
+					const post = document.querySelector(".post");
+					const widget = document.querySelector(".star-widget");
+					const editBtn = document.querySelector(".edit");
+					btn.onclick = ()=>{
+					  widget.style.display = "none";
+					  post.style.display = "block";
+					  editBtn.onclick = ()=>{
+						widget.style.display = "block";
+						post.style.display = "none";
+					  }
+					  return false;
+					}
+				  </script>
+			  
 
 			<!-- Footer -->
 				<section id="footer">
@@ -326,78 +376,74 @@
 						<div class="row">
 							<div class="col-8 col-12-medium">
 								<section>
-									<h2>Find us here!!</h2>
+									<h2>About us</h2>
 								</header>
-								<a href="#" class="image featured"><img src="" alt="" height="" width=""/></a>
+								<p>
+									We are a brand-new take-out restaurant <strong>falani</strong> just opened at (address). Everyone who works here put their hearts into creating this restaurant.
+								</p>
+								<a href="#" class="image featured"><img src="images/Screen_Shot_2023-03-13_at_8.54.54_PM-removebg-preview.png" alt="" height="auto" width="aut"/> </a>
 								<footer>
 									<!-- <ul class="actions">
 										<li><a href="#" class="button">Find out more</a></li>
 									</ul> -->
-									
+								
 								</section>
 							</div>
 							<div class="col-4 col-12-medium">
 								<section>
 									<header>
-										<h2>About Us!</h2>
+										<h2>social link</h2>
 									</header>
 									<ul class="social">
-										<a href="#" class="image featured"><img src="images/Screen_Shot_2023-03-13_at_8.54.54_PM-removebg-preview.png" alt="" height="auto" width="auto"/> </a>
-										<p>
-											We are a brand-new take-out restaurant <strong>falani</strong> just opened at (address). Everyone who works here put their hearts into creating this restaurant.
-										</p>
+										<li><a class="icon brands fa-instagram" href="https://www.instagram.com/falanijuicesnac/" target="_blank"><span class="label">instagram</span></a></li>
+										<!-- <li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+										<li><a class="icon brands fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
+										<li><a class="icon brands fa-tumblr" href="#"><span class="label">Tumblr</span></a></li>
+										<li><a class="icon brands fa-linkedin-in" href="#"><span class="label">LinkedIn</span></a></li> -->
 									</footer>
 								</section>
 							</div>
 							<div class="col-4 col-6-medium col-12-small">
 								<section>
 									<header>
-										<h2>Contact</h2>
+										<h2>Contact</h2> 
+										<!-- <h2>Tempus consequat</h2> -->
 									</header>
 									<ul class="divided">
 										<li>
-											<h3>Address</h3>
+											<h6>Address</h6>
 											<p>
-												<strong>I</strong>
-												<strong>Guwahati, </strong>
-												<strong>Assam. </strong>
+												Untitled Incorporated<br />
+												1234 Somewhere Road Suite<br />
+												Nashville, TN 00000-0000
 											</p>
 										</li>
-										<!-- <li>
-											<h3>Mail</h3>
-											<p><a href="#">someone@untitled.tld</a></p>
-										</li> -->
 										<li>
-											<h3>Phone</h3>
-											<p><strong>+91 </strong></p>
+											<h6>Mail</h6>
+											<p><a href="#">someone@untitled.tld</a></p>
+										</li>
+										<li>
+											<h6>Phone</h6>
+											<p>(800) 000-0000</p>
 										</li>
 									</ul>
 								</section>
 							</div>
-							<div class="col-4 col-6-medium col-12-small">
-								<header> 
-									<h2>Maker of this website</h2>
-								</header>
-								<ul class="divided">
-									<li>
-										<p>
-											<li><a href="https://github.com/nathancarter209"><strong>Rishikesh</strong></a></li>
-											<a href="https://github.com/SudeepAcharjee"><strong>Sudeep</strong></a></li>
-										</p>
-									</li>
-								</ul>
-							</div>
+							<!-- <div class="col-4 col-6-medium col-12-small">
+							</div> -->
 							<div class="col-4 col-12-medium">
 								<section>
-									<header>
-										<h2>Social links</h2>
-									</header>
-									<ul class="social">
-												<li><a class="icon brands fa-instagram" href="https://www.instagram.com/falanijuicesnac/" target="_blank"><span class="label">instagram</span></a></li>
-												<!-- <li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
-												<li><a class="icon brands fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
-												<li><a class="icon brands fa-tumblr" href="#"><span class="label">Tumblr</span></a></li>
-												<li><a class="icon brands fa-linkedin-in" href="#"><span class="label">LinkedIn</span></a></li> -->
+									<!-- <header>
+
+									</ul> -->
+									<ul class="divided">
+										<li>
+											<h3>Who built this webpage</h3>
+											<p>
+												<li><a href="https://github.com/nathancarter209"><strong>Rishikesh</strong></a></li>
+												<a href="https://github.com/SudeepAcharjee"><strong>Sudeep</strong></a></li>
+											</p>
+										</li>
 										<!-- <li>
 											<h3>Mail</h3>
 											<p><a href="#">someone@untitled.tld</a></p>
